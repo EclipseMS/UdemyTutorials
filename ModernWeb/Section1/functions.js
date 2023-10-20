@@ -3,7 +3,7 @@ var sayi2 = randomNumberGenerator(40);
 var sayi3 = randomNumberGenerator(60);
 var sayi4 = randomNumberGenerator(80);
 var sayi5 = randomNumberGenerator(99);
-var sayi6 = randomNumberGenerator(99);
+var sayi6 = randomNumberGenerator();
 
 console.log(
   "Kolon : " +
@@ -20,6 +20,6 @@ console.log(
     sayi6
 );
 
-function randomNumberGenerator(maxNumber) {
+function randomNumberGenerator(maxNumber = 99) {
   return Math.ceil(Math.random() * maxNumber);
 }
