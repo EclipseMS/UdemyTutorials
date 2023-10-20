@@ -1,9 +1,9 @@
-var sayi1 = randomNumberGenerator();
-var sayi2 = randomNumberGenerator();
-var sayi3 = randomNumberGenerator();
-var sayi4 = randomNumberGenerator();
-var sayi5 = randomNumberGenerator();
-var sayi6 = randomNumberGenerator();
+var sayi1 = randomNumberGenerator(20);
+var sayi2 = randomNumberGenerator(40);
+var sayi3 = randomNumberGenerator(60);
+var sayi4 = randomNumberGenerator(80);
+var sayi5 = randomNumberGenerator(99);
+var sayi6 = randomNumberGenerator(99);
 
 console.log(
   "Kolon : " +
@@ -20,6 +20,6 @@ console.log(
     sayi6
 );
 
-function randomNumberGenerator() {
-  return Math.ceil(Math.random() * 99);
+function randomNumberGenerator(maxNumber) {
+  return Math.ceil(Math.random() * maxNumber);
 }
